@@ -17,22 +17,28 @@ html, body {
 
 header {
   text-align: center;
-  padding: 3rem 1rem 1rem;
+  padding: 2rem 1rem;
+}
+
+header h1, header p {
+  margin: 0.5rem 0;
 }
 
 header img {
-  max-width: 300px;
-  margin: 2rem 0;
-}
-
-h1, h2, h3 {
-  color: #eee;
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 2rem auto;
 }
 
 .container {
   max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: #eee;
 }
 
 a {
@@ -55,13 +61,21 @@ a:hover {
   border: 1px solid #444;
   color: #eee;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   display: inline-block;
+  text-align: center;
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
   color: #555;
 }
@@ -73,8 +87,33 @@ audio {
 }
 
 iframe {
-  margin-top: 1rem;
+  display: block;
+  margin: 1rem auto 0;
   width: 100%;
   max-width: 560px;
   height: 315px;
+}
+
+/* Responsive spacing for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
 }
