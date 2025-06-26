@@ -1,16 +1,79 @@
-<style>
-  @font-face {
-    font-family: 'DaisyWheel';
-    src: url('fonts/daisywhl.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  body {
-    margin: 0;
-    background-color: #0e0e0e;
-    color: #ccc;
-    font-family: 'DaisyWheel', sans-serif;
-  }
-  /* rest unchanged */
-</style>
+@font-face {
+  font-family: 'DaisyWheel';
+  src: url('fonts/daisywhl.woff2') format('woff2'),
+       url('fonts/daisywhl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  color: #ccc;
+  font-family: 'DaisyWheel', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+header img {
+  max-width: 300px;
+  margin: 2rem 0;
+}
+
+h1, h2, h3 {
+  color: #eee;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+a {
+  color: #67e8f9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.post {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #222;
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #eee;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+audio {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+iframe {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
