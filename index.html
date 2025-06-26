@@ -1,0 +1,128 @@
+---
+layout: default
+title: Phase Two Pickups | IR Pack & Gear Info
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <style>
+    @font-face {
+      font-family: 'Dymo';
+      src: url('Dymo.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      color: #ccc;
+      font-family: 'Dymo', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    header img {
+      max-width: 300px;
+      margin: 2rem 0;
+    }
+    h1, h2, h3 {
+      color: #eee;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    a {
+      color: #67e8f9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .post {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #222;
+      padding-bottom: 2rem;
+    }
+    .button {
+      background-color: #222;
+      border: 1px solid #444;
+      color: #eee;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      display: inline-block;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    audio {
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    iframe {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PHASE TWO PICKUPS</h1>
+    <p>By Ronkdonkles & Crazyon</p>
+    <img src="image.png" alt="Phase Two Pickup" />
+    <p>Coming Soon</p>
+  </header>
+
+  <div class="container">
+    <div class="post">
+      <h2>🔊 IR Pack Demo & Release Info</h2>
+      <p>We're nearly done with the In Utero IR pack. Stay tuned for the final version. For now, check out the demo below and feel free to download the beta IRs.</p>
+      <a href="#" class="button">Download IR Pack (Beta)</a>
+      <audio controls>
+        <source src="demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="post">
+      <h2>🎸 Recreating Phase 2 Pickups</h2>
+      <p>Everything we’ve learned about building true-to-form Univox Hi-Flier Phase 2 pickups — magnets, wire, covers, and tone shaping tips — will be shared here.</p>
+      <a href="#" class="button">Read Pickup Build Guide</a>
+    </div>
+
+    <div class="post">
+      <h2>🛠️ Gear & Tone Breakdown</h2>
+      <p>From Albini’s mic placement to which amp settings get you closest — explore detailed tone breakdowns for each song and how you can achieve it with your own gear.</p>
+      <a href="#" class="button">Explore Tone Posts</a>
+    </div>
+
+    <div class="post">
+      <h2>📝 Blog Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Ronkdonkles & Crazyon | Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
