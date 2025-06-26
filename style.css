@@ -1,11 +1,16 @@
-@font-face {
-  font-family: 'Daisywhl';
-  src: url('daisywhl.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  font-family: 'Daisywhl', Arial, sans-serif;
-}
+<style>
+  @font-face {
+    font-family: 'DaisyWheel';
+    src: url('fonts/daisywhl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  body {
+    margin: 0;
+    background-color: #0e0e0e;
+    color: #ccc;
+    font-family: 'DaisyWheel', sans-serif;
+  }
+  /* rest unchanged */
+</style>
