@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Daisywhl';
+  src: url('fonts/daisywhl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Daisywhl', Arial, sans-serif;
+}
