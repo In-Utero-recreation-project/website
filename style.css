@@ -7,8 +7,9 @@
   font-display: swap;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
   background-color: #141212 !important;
   color: #ccc;
   font-family: 'DaisyWheel', sans-serif;
